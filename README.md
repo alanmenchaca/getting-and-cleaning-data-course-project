@@ -27,7 +27,7 @@ You should create one R script called run_analysis.R that does the following.
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-### Files
+### README: Course proyect files
 - `CodeBook.md`: Contains all the variables and summaries calculated and any transformation perfomed to clean up the data.
 - `run_analysis.R`: does the required following 5 instructions: 
   1. Merges the training and the test sets to create one data set.
