@@ -1,5 +1,5 @@
 # Download and extract data
-filename = "projectfiles_UCI_HAR_Dataset.zip"
+filename <- "projectfiles_UCI_HAR_Dataset.zip"
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 if(!file.exists(filename)) {
@@ -27,10 +27,10 @@ subject_data <- bind_rows(subject_train, subject_test)
 
 # 2. Extracts only the measurements on the mean and standard deviation
 # for each measurement. 
-X_mean_std <- X_data %>% select(matches("mean|std"))
+X_mean_std <- select(X_data, matches("mean|std"))
 
 # 3. Uses descriptive activity names to name the activities in the data set
-y_data <- y_data %>% inner_join(activity_labels, by = "id") %>% select(activity)
+y_data <- inner_join(y_data, activity_labels, by = "id") %>% select(activity)
 
 # 4. Appropriately labels the data set with descriptive variable names. 
 names(subject_data) <- "subject"
