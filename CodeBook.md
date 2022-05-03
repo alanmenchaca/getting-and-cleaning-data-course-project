@@ -16,7 +16,7 @@ The features selected for this database come from the accelerometer and gyroscop
 - `features`: List of all features.
 - `activity_labels`: Links the class labels with their activity name.
 
-** The following data are available for the train and test data (`subject_test`, `X_test` and `y_test`). Their descriptions are equivalent. **
+**The following data are available for the train and test data (`subject_test`, `X_test` and `y_test`). Their descriptions are equivalent.**
 - `subject_train`: Each row identifies the subject who performed the activity for each window sample.
 - `X_train`: Training set, with features names included as a column names.
 - `y_train`: Contains training labels of activities code labels.
